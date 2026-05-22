@@ -78,6 +78,99 @@ export const mockReviews = [
   { id: 6, client: 'Amanda T.', preview: 'Jake Tiesler Personal Training was an absolute delight. From the moment I walked in...', stars: 5, platform: 'Google', date: '2025-04-15', status: 'published' },
 ]
 
+export type Testimonial = {
+  id: string
+  name: string
+  role: string
+  content: string
+  rating: number
+  image: string
+  featured?: boolean
+}
+
+export const mockTestimonials: Testimonial[] = [
+  {
+    id: '1',
+    name: 'Tyler M.',
+    role: 'Leaner and more defined',
+    content: "Jake's targeted approach really works the smaller, often neglected muscles, and I can already see and feel the difference.",
+    rating: 5,
+    image: '/placeholder-user.jpg',
+    featured: true,
+  },
+  {
+    id: '2',
+    name: 'Rachel P.',
+    role: 'Early morning training client',
+    content: 'If you want real results, Jake will get you there. Knowledgeable, motivating, and easy to work with.',
+    rating: 5,
+    image: '/placeholder-user.jpg',
+    featured: true,
+  },
+  {
+    id: '3',
+    name: 'James W.',
+    role: 'Personal training client',
+    content: "Jake was thorough, genuinely cared about my progress, and made sure I understood the why behind everything.",
+    rating: 5,
+    image: '/placeholder-user.jpg',
+  },
+  {
+    id: '4',
+    name: 'Michelle C.',
+    role: 'Strength and accountability',
+    content: "Jake does not just care about fitness, he cares about his clients. He keeps progress direct and the sessions enjoyable.",
+    rating: 5,
+    image: '/placeholder-user.jpg',
+  },
+]
+
+export type GalleryImage = {
+  id: string
+  url: string
+  alt: string
+  category: 'transformation' | 'training' | 'lifestyle'
+}
+
+export const mockGalleryImages: GalleryImage[] = [
+  {
+    id: '1',
+    url: 'https://static.wixstatic.com/media/9c1fd7_90a48fab8d304547b7e2f2d57812c3ec~mv2.jpg',
+    alt: 'Jake Tiesler portrait',
+    category: 'lifestyle',
+  },
+  {
+    id: '2',
+    url: 'https://static.wixstatic.com/media/9c1fd7_c2655224ffe6406a810a6291691d4cec~mv2.png',
+    alt: 'Jake training client',
+    category: 'training',
+  },
+  {
+    id: '3',
+    url: 'https://static.wixstatic.com/media/9c1fd7_7be8cfbc6c1848a5a46e4b67050907c3~mv2.jpg',
+    alt: 'Jake client session',
+    category: 'training',
+  },
+  {
+    id: '4',
+    url: 'https://static.wixstatic.com/media/9c1fd7_bf05ef58d7164f0983e867c29050ff16~mv2.png',
+    alt: 'Jake coaching close-up',
+    category: 'lifestyle',
+  },
+  {
+    id: '5',
+    url: 'https://static.wixstatic.com/media/9c1fd7_c87c2841a17c45c48dacb13423f55a5c~mv2.png',
+    alt: 'Jake with client workout',
+    category: 'transformation',
+  },
+  {
+    id: '6',
+    url: 'https://static.wixstatic.com/media/9c1fd7_3dd15d0f4aa24f61b839bccd0c269c39~mv2.png',
+    alt: 'Jake training session',
+    category: 'training',
+  },
+]
+
 export const mockBlogPosts = [
   { id: 1, title: 'How to Build Muscle Over 35 — The Real Guide', category: 'Training', date: '2025-05-18', status: 'published' },
   { id: 2, title: 'Why Busy Executives Fail at Fitness (And How to Fix It)', category: 'Mindset', date: '2025-05-12', status: 'published' },
